@@ -32,7 +32,7 @@ export default function HeroSection() {
           <div className="flex justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-xl border border-gray-600 shadow-xl">
               <img
-                src="/placeholder.svg?height=600&width=400"
+                src="/app-user.webp?height=600&width=400"
                 alt="DOMI App en acción"
                 className="w-full object-cover"
                 width={400}
