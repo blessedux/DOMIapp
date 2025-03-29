@@ -53,6 +53,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'accent-custom': {
+          DEFAULT: '#D52B9D',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
