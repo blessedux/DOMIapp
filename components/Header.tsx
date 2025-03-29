@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button"; // Make sure this path is correct
+import Image from "next/image"; // Import the Next.js Image component
 
 export default function Header() {
   return (
@@ -7,18 +8,18 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl">
           {/* Optional: Add an icon here */}
-          <span className="text-primary">DOMI</span>
+          <Link href="/" className="flex items-center"> {/* Wrap logo in Link to home */}
+            <Image
+              src="/icons/DOMI_LOGO.svg" // Assuming PNG format, adjust if needed (e.g., .svg, .webp)
+              alt="DOMI Logo"
+              width={60} // Specify appropriate width
+              height={24} // Specify appropriate height to maintain aspect ratio
+              priority // Add priority if it's Above The Fold (ATF) for LCP
+            />
+          </Link>
         </div>
         <nav className="hidden md:flex gap-6">
-          <Link href="#problem" className="text-sm font-medium hover:text-primary">
-            Problema
-          </Link>
-          <Link href="#solution" className="text-sm font-medium hover:text-primary">
-            Solución
-          </Link>
-          <Link href="#benefits" className="text-sm font-medium hover:text-primary">
-            Beneficios
-          </Link>
+          
           {/* Add other nav links if needed */}
         </nav>
         <div className="flex items-center gap-4">
