@@ -3,16 +3,16 @@ import { ChevronRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-[120%] min-h-[600px] md:min-h-[70vh] flex items-center justify-start overflow-hidden">
+    <section className="relative w-full min-h-[600px] md:min-h-[100vh] flex items-center justify-start overflow-hidden">
       <iframe
-        src='https://my.spline.design/animatedclonecube-8a9fe89885558ed8e576c2cd84a6f352/ '
+        src='https://my.spline.design/animatedclonecube-8a9fe89885558ed8e576c2cd84a6f352/?background=00000000'
         width='120%'
         height='100%'
         className="absolute top-0 left-0 w-full h-full z-0"
         aria-hidden="true"
       ></iframe>
-
-      <div className="relative z-10 container px-4 md:px-6">
+      
+      <div className="relative z-10 container px-4 md:px-6 pt-20">
         <div className="flex flex-col items-start text-left max-w-xl lg:max-w-2xl">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">

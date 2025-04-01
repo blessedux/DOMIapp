@@ -1,4 +1,5 @@
 import { CheckCircle, Bell } from "lucide-react";
+import { GooeyText } from "@/components/ui/gooey-text-morphing";
 
 export default function SolutionSection() {
   return (
@@ -6,7 +7,14 @@ export default function SolutionSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestra Solución: DOMI</h2>
+            <div className="h-20">
+              <GooeyText 
+                texts={["Nuestra Solución: DOMI", "DOMI, tu Asistente IA", "Optimiza tus Permisos", "Simplifica tu Trabajo"]} 
+                morphTime={1.5}
+                cooldownTime={2}
+                textClassName="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" 
+              />
+            </div>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               DOMI es una plataforma inteligente que automatiza y optimiza la gestión de permisos, reduciendo
               tiempos y errores.
